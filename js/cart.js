@@ -27,9 +27,9 @@ function clearCart() {
 
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {
-
   // TODO: Find the table body
   tbodyElm=table.getElementsByTagName('tbody')[0];
+
   // TODO: Iterate over the items in the cart
   for(let i=0; i<cart.items.length;i++)
   { 
@@ -63,14 +63,16 @@ function removeItemFromCart(event) {
   // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
   for (let i =0; i<trElm.length;i++){
     trElm[i].getElementsByTagName('td')[0];
-    if( event.target.id ==trElm[i].firstChild.id)
+    if( event.target.id ==trElm[i].firstChild.id){
       cart.removeItem(i);
-  // TODO: Save the cart back to local storage
+          // TODO: Save the cart back to local storage
+      cart.saveToLocalStorage();
+      // TODO: Re-draw the cart table
+      renderCart();
   }
-  cart.saveToLocalStorage();
-  // TODO: Re-draw the cart table
+  }
+
   
-showCart();
 }
 
 // This will initialize the page and draw the cart on screen
