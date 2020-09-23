@@ -1,0 +1,59 @@
+h1{
+    background-color: azure;
+    font-size: xxx-large;
+    font-family: emoji;
+    text-align: center;
+    height: 93px;
+}
+
+
+ul{
+    list-style: none;
+    position: absolute;
+    font-size: larger;
+    left: 2cm;
+    /* display: inline-flex; */
+}
+
+.copy{
+    padding: 30px;
+    font-size: x-large;
+    color: darkcyan;
+}
+
+.card{
+    padding: 30px;
+    font-size: x-large;
+    color: #2239d8;
+}
+
+ p{
+    position: absolute;
+    top: 96%;
+    /* text-align: center; */
+    left: 50%;
+}
+nav ul {
+    list-style: none;
+    position: absolute;
+    font-size: larger;
+    left: 1cm;
+    padding: 23px;
+    top: 10%;
+    font-size: x-large;
+}
+nav ul li{
+  padding-left: 20px;
+  display: inline-block;
+  /* text-decoration: none; */
+
+}
+body{
+    background-color: antiquewhite;
+}
+nav ul li a{
+    padding-left: 20px;
+    display: inline-block;
+    text-decoration: none;
+  
+  }
